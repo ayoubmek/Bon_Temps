@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <base href="" />
-    <title></title>
+    <title>Bon Temps Cafe</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
@@ -13,10 +12,10 @@
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
 <style>.bg-gold {
     background: linear-gradient(135deg, #e3c77a, #caa44c, #8c6e2f, #caa44c);
-    color: white; /* You can change this to black or #2d2d2d if contrast is low */
+    color: white; 
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(202, 164, 76, 0.7),  /* Outer glow */
-                inset 0 0 5px rgba(255, 255, 255, 0.3); /* Inner highlight */
+    box-shadow: 0 0 10px rgba(202, 164, 76, 0.7),  
+                inset 0 0 5px rgba(255, 255, 255, 0.3);  
 }
 .gold-text {
     background: linear-gradient(135deg, #c79b33ff, #ffbc21ff);
@@ -174,10 +173,8 @@
                             													<span class="menu-title">System</span>
                             												</a>
                             											</div>
-                            											<!--end::Menu item-->
-                            										</div>
-                            										<!--end::Menu-->
-                            									</div>
+                             										</div>
+                             									</div>
 
                             <div class="d-flex align-items-center me-lg-n2 ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
                                 <div class="header-logo">
@@ -266,8 +263,7 @@
         `;
         sliderContainer.appendChild(div);
     });
-
-    // Initialize Tiny Slider after adding slides
+ 
     tns({
         container: '#offer-slider',
         loop: true,
@@ -305,19 +301,16 @@
                 data-tns-dots="false"
                 data-tns-prev-button="#kt_team_slider_prev1"
                 data-tns-next-button="#kt_team_slider_next1"
-                class="d-flex">
-                <!-- Categories inserted dynamically by JS -->
+                class="d-flex"> 
             </div>
 
-            <!-- Previous button -->
-            <button
+             <button
                 class="btn btn-icon btn-active-color-primary position-absolute top-50 start-0 translate-middle-y ms-n3 z-index-3"
                 id="kt_team_slider_prev1">
                 <i class="ki-duotone ki-left fs-2x"></i>
             </button>
 
-            <!-- Next button -->
-            <button
+             <button
                 class="btn btn-icon btn-active-color-primary position-absolute top-50 end-0 translate-middle-y me-n3 z-index-3"
                 id="kt_team_slider_next1">
                 <i class="ki-duotone ki-right fs-2x"></i>
@@ -326,13 +319,11 @@
     </div>
 </div>
 
-
-<!-- Products Tabs -->
+ 
 <div class="row g-5 g-xl-10 mb-5 mb-xl-10 justify-content-center">
     <div class="col-xl-12">
         <div class="tab-content" id="categories-tabs">
-            <!-- Products inserted by JS -->
-        </div>
+         </div>
     </div>
 </div>
 
@@ -418,8 +409,10 @@ const categories = [
     nom: "Jwajem",
     icone: "assets/media/ch/Gemini_Generated_Image_wjhpf6wjhpf6wjhp.webp",
     produits: [
-      { id: 112, nom: "Jwajem poulet", image: "assets/media/ch/Gemini_Generated_Image_wjhpf6wjhpf6wjhp.webp", prix: 7000 },
-      { id: 113, nom: "Jwajem viande hachée", image: "assets/media/ch/Gemini_Generated_Image_eqvs48eqvs48eqvs.webp", prix: 8000 }
+      { id: 112, nom: "Jwajem Mini", image: "assets/media/ch/Gemini_Generated_Image_djhu77djhu77djhu.webp", prix: 6000 },
+      { id: 113, nom: "Jwajem Moyen", image: "assets/media/ch/Gemini_Generated_Image_djhu77djhu77djhu.webp", prix: 8000 },
+      { id: 114, nom: "Jwajem Big", image: "assets/media/ch/Gemini_Generated_Image_djhu77djhu77djhu.webp", prix: 10000 }
+
     ]
   },
   {
@@ -452,10 +445,37 @@ const categories = [
     nom: "Mojito",
     icone: "assets/media/ch/Gemini_Generated_Image_g0j8teg0j8teg0j8.webp",
     produits: [
-      { id: 114, nom: "Mojito classique", image: "assets/media/ch/Gemini_Generated_Image_g0j8teg0j8teg0j8.webp", prix: 7000 },
-      { id: 115, nom: "Mojito fraise", image: "assets/media/ch/Gemini_Generated_Image_foret2foret2fore.webp", prix: 8000 },
-      { id: 116, nom: "Mojito citron", image: "assets/media/ch/Gemini_Generated_Image_8dvovp8dvovp8dvo.webp", prix: 7000 }
-    ]
+    {
+      "id": 71,
+      "nom": "Mojito Virginie",
+      "image": "assets/media/ch/Gemini_Generated_Image_hllijrhllijrhlli.webp",
+      "prix": 6500
+    },
+    {
+      "id": 72,
+      "nom": "Mojito bleu",
+      "image": "assets/media/ch/Gemini_Generated_Image_x2otx4x2otx4x2ot.webp",
+      "prix": 7000
+    },
+    {
+      "id": 73,
+      "nom": "Mojito framboise",
+      "image": "assets/media/ch/Gemini_Generated_Image_dxqky0dxqky0dxqk.webp",
+      "prix": 7000
+    },
+    {
+      "id": 74,
+      "nom": "Mojito Menthe",
+      "image": "assets/media/ch/Gemini_Generated_Image_dnfu75dnfu75dnfu.webp",
+      "prix": 7000
+    },
+    {
+      "id": 75,
+      "nom": "Mojito Grenadine",
+      "image": "assets/media/ch/Gemini_Generated_Image_fwc0efwc0efwc0ef.webp",
+      "prix": 7000
+    }
+  ]
   },
   {
     id: 10,
@@ -484,15 +504,24 @@ const categories = [
     ]
   },
   {
-    id: 12,
-    nom: "Omelette",
-    icone: "assets/media/ch/Gemini_Generated_Image_szh0uqszh0uqszh0.webp",
-    produits: [
-      { id: 120, nom: "Omelette nature", image: "assets/media/ch/Gemini_Generated_Image_szh0uqszh0uqszh0.webp", prix: 6000 },
-      { id: 121, nom: "Omelette fromage", image: "assets/media/ch/Gemini_Generated_Image_szh0uqszh0uqszh0.webp", prix: 7000 },
-      { id: 122, nom: "Omelette jambon", image: "assets/media/ch/Gemini_Generated_Image_szh0uqszh0uqszh0.webp", prix: 7000 }
-    ]
-  },
+  "id": 12,
+  "nom": "Omelette",
+  "icone": "assets/media/ch/Gemini_Generated_Image_szh0uqszh0uqszh0.webp",
+  produits: [
+    {
+      "id": 98,
+      "nom": "Omelette Fromage",
+      "image": "assets/media/ch/Gemini_Generated_Image_57ipq857ipq857ip.webp",
+      "prix": 6000
+    },
+    {
+      "id": 99,
+      "nom": "Omelette Fromage thon",
+      "image": "assets/media/ch/Gemini_Generated_Image_5ej4fo5ej4fo5ej4.webp",
+      "prix": 7000
+    }
+  ]
+},
   {
     id: 13,
     nom: "Brunch",
@@ -505,11 +534,30 @@ const categories = [
   {
     id: 14,
     nom: "Petit déjeuner",
-    icone: "assets/media/ch/Gemini_Generated_Image_d1t7hjd1t7hjd1t7.webp",
+    icone: "assets/media/ch/Gemini_Generated_Image_se2u5ese2u5ese2u.webp",
     produits: [
-      { id: 125, nom: "Petit déjeuner classique", image: "assets/media/ch/Gemini_Generated_Image_d1t7hjd1t7hjd1t7.webp", prix: 7000 },
-      { id: 126, nom: "Petit déjeuner spécial", image: "assets/media/ch/Gemini_Generated_Image_d1t7hjd1t7hjd1t7.webp", prix: 9000 }
-    ]
+    {
+      "id": 107,
+      "nom": "Classic",
+      "description": "Café au choix (coffee of your choice) + bouteille d’eau 0.5L + croissant + jus",
+      "image": "assets/media/ch/1000131990.webp",
+      "prix": 6000
+    },
+    {
+      "id": 108,
+      "nom": "Gourmand",
+      "description": "Café au choix (coffee of your choice) + bouteille d’eau 0.5L + jus + yaourt + beurre + confiture + chocolat + miel + toasts",
+      "image": "assets/media/ch/1000131992.webp",
+      "prix": 9000
+    },
+    {
+      "id": 109,
+      "nom": "Duo",
+      "description": "2 cafés au choix + 1 bouteille d’eau 1L + 2 croissants + 2 jus + 2 yaourts + 2 omelettes + beurre + confiture + chocolat + miel + toasts",
+      "image": "assets/media/ch/1000131997.webp",
+      "prix": 18000
+    }
+  ]
   }
 ];
 
@@ -581,8 +629,7 @@ categories.forEach((categorie, index) => {
 tabsContainer.appendChild(tabDiv);
 
 });
-
-// Initialize Tiny Slider for categories
+ 
 tns({
     container: '#food-slider',
     items: 3,
